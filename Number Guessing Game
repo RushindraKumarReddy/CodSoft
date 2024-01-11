@@ -1,0 +1,48 @@
+#include <cstdlib>
+
+#include <time.h>
+
+#include <iostream>
+
+ 
+
+using namespace std;
+
+ 
+
+int main() 
+{
+
+      srand(time(0));
+
+      int number;
+
+      number = rand() % 100 + 1;
+
+      int guess;
+
+      do {
+
+            cout << "Enter your estimate: ";
+
+            cin >> guess;
+
+            if (guess < number)
+
+                  cout << "Your estimate is less, than the secret number" <<"\U0001F61C"<< endl;
+
+            else if (guess > number)
+
+                  cout << "Your estimate is more, than the secret number" <<"\U0001F61C"<< endl;
+
+            else
+
+                  cout << "Your guess is right!" <<"\U0001F600"<< endl;
+
+      } while (guess != number);
+
+      system("PAUSE");
+
+      return 0;
+
+}
