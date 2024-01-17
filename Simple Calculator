@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char(op);
+    int a,b;
+    cout<<"Enter value of a :";
+    cin>>a;
+    cout<<"Enter value of b :";
+    cin>>b;
+    cout<<"Enter operations + or - or * or /";
+    cin>>op;
+    switch(op){
+        case '+':
+        cout<<"Addition ";
+        cout<<a+b;
+        break;
+        case '-':
+        cout<<"Subtraction ";
+        cout<<a-b;
+        break;
+        case '*':
+        cout<<"Multiplication ";
+        cout<<a*b;
+        break;
+        case '/':
+        cout<<"Division ";
+        cout<<a/b;
+        break;
+    }
+}
